@@ -6,8 +6,6 @@ module dadda_multiplier (a,b,p);
  wire [1:56] cy;
  integer i,j;
  
- 
- 
  genvar gi, gj;
  generate
    for(gi=0; gi<8; gi=gi+1) begin : gen_pp_i
