@@ -1,5 +1,3 @@
-										      8-bit High Speed ALU
-
 In this project, we have designed a 8-bit high speed ALU using Verilog language that performs various arithmetic operation which includes Addition, Subtraction, Multiplication and Logical operations which includes AND, OR, NOT, XOR and Shifting operations includes Logical shift right, Logical shift Left, Rotate Right and Rotate Left. To increase the speed of operation and decrease the latency in ALU, we have used various algorithms for each operation. Arithmetic Operation:
 	Addition – Sparse Kogge Stone Adder
 	Subtraction – Sparse Kogge Stone Subtracter
