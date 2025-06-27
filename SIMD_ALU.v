@@ -70,7 +70,7 @@ always @(posedge clk or posedge reset)
             4'b1001: out[15:0] <= {8'b0, shift_out0};       // Logical shift right
             4'b1010: out[15:0] <= {8'b0, shift_out0};       // Rotate left
             4'b1011: out[15:0] <= {8'b0, shift_out0};       // Rotate right
-            4'b1100: out[63:0] <= mat_out;
+            4'b1100: out[63:0] <= mat_out;                 //8x8 matrix multiplication               
             4'b1101: begin out[63:60] <= (a[31:30] * b[31:30]) + (a[29:28] * b[23:22]) + (a[27:26] * b[15:14]) + (a[25:24] * b[7:6]);
                  out[59:56] <= (a[31:30] * b[29:28]) + (a[29:28] * b[21:20]) + (a[27:26] * b[13:12]) + (a[25:24] * b[5:4]);
                  out[55:52] <= (a[31:30] * b[27:26]) + (a[29:28] * b[19:18]) + (a[27:26] * b[11:10]) + (a[25:24] * b[3:2]);
